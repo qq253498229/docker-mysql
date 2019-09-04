@@ -1,0 +1,13 @@
+version: "3"
+services:
+  mysql:
+    image: registry.cn-beijing.aliyuncs.com/codeforfun/mysql:5.7.26
+    build: .
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+#    ports:
+#      - "3306:3306"
+#    volumes:
+#      - "./docker/mysql/data:/var/lib/mysql"
+#      - "./docker/mysql/config/my.cnf:/etc/mysql/conf.d/my.cnf"
